@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="addNew.css">
+    <script src="addNew.js"></script>
+</head>
+<body>
+<div class="header">
+    <div>
+        <h1>添加联系人</h1>
+        <p>作者：wtl</p>
+    </div>
+</div>
+<div class="body">
+    <form>
+        <table class="tb">
+            <tbody>
+                <tr>
+                    <td class="td-left">姓名</td>
+                    <td class="td-right"><input type="text" name="name" pattern="[\u4e00-\u9fa5a-zA-Z]{2,}" required></td>
+                </tr>
+                <tr>
+                    <td class="td-left">电话</td>
+                    <td class="td-right"><input type="text" name="phone" pattern="[0-9]*" required></td>
+                </tr>
+                <tr>
+                    <td class="td-left">邮箱</td>
+                    <td class="td-right"><input type="text" name="emial" pattern=".+@.+" required></td>
+                </tr>
+                <tr>
+                    <td class="td-left">住址</td>
+                    <td class="td-right"><input type="text" name="address" pattern=".+" required></td>
+                </tr>
+                <tr>
+                    <td class="td-left">QQ号</td>
+                    <td class="td-right"><input type="text" name="qq" pattern="[0-9]{7,10}" required></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="bottom">
+            <input class="save" type="submit" value="保存">
+            <button>取消</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

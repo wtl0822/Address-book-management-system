@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <h1 style="text-align: center;color: white">通讯录</h1>
+        <p style="text-align: center;color: white">AddressList Book</p>
+    </div>
+    <div class="window">
+        <div class="window-item">
+            <div style="margin: auto">
+                <div style="margin: auto">
+                    <img class="logo" src="https://s1.ax1x.com/2020/10/18/0XNrz4.png" alt="0XNrz4.png" border="0"/>
+                </div>
+                <p style="text-align:center">Please sign in</p>
+            </div>
+            <div class="inputInfo">
+                <form action="../bookList/bookList.html" onsubmit="return login()">
+                    <label for="username">账号：<input id="id-urn" placeholder="wtl" type="text" name="username" value="wtl"><br>
+                    </label>
+                    <label for="password">密码：<input id="id-pwd" placeholder="wtl" type="password" name="password" value="wtl"><br>
+                    </label>
+                    <input type="submit" value="提交">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
